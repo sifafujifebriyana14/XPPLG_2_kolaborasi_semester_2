@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Story</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Vanilla Tilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CONTAINER -->
+  <div class="min-h-screen main-bg flex items-center justify-center relative overflow-hidden">
+
+    <!-- Glow -->
+    <div class="yellow-glow"></div>
+
+    <!-- CLOSE -->
+    <button
+      onclick="window.location.href='INDEX.html'"
+      class="close-btn"
+    >
+      ✕
+    </button>
+
+    <!-- Folder -->
+    <div>
+
+      <button
+        onclick="openFolder()"
+        class="folder-card group"
+        data-tilt
+        data-tilt-max="10"
+      >
+
+        <!-- Glow -->
+        <div class="folder-glow"></div>
+
+        <!-- Content -->
+        <div class="relative z-10">
+
+          <div class="folder-icon">
+            📁
+          </div>
+
+          <h1 class="folder-title">
+            Recount Text
+          </h1>
+
+          <p class="folder-text">
+            Click to open my experience story
+          </p>
+
+        </div>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- POPUP -->
+  <div
+    id="popup"
+    class="popup"
+  >
+
+    <!-- BOX -->
+    <div class="popup-box">
+
+      <!-- CLOSE -->
+      <button
+        onclick="closeFolder()"
+        class="close-btn"
+      >
+        ✕
+      </button>
+
+      <!-- TITLE -->
+      <div class="popup-header">
+
+        <div class="popup-icon">
+          ✨
+        </div>
+
+        <div>
+          <h1 class="popup-title">
+            My Experience Designing a Website
+          </h1>
+
+          <p class="popup-subtitle">
+            Recount Text
+          </p>
+        </div>
+
+      </div>
+
+      <!-- TEXT -->
+      <div class="popup-text">
+
+        <p>
+           My Experience Designing a Website in Figma Sifa, a student majoring in RPL, had a very memorable experience designing a website using Figma for my second collaborative assignment. The assignment challenged me to create an attractive and professional-looking portfolio design. 
+        </p>
+        
+        <p>
+            At first, I felt quite confused and a little hesitant because I wasn't used to creating designs from scratch in Figma. However, I didn't give up. I began looking for inspiration from various designs online and trying to understand how to create a neat and pleasing layout. After that, I began arranging important sections like the navbar, hero section, and portfolio in a style that I liked.
+        </p> 
+        <p>
+            During the design process, I tried to choose colors that suited my personality and tried various font combinations for a more aesthetic look. Although I struggled and had to make several design changes, I persisted until I achieved the best result.
+        </p> 
+        <p>
+                Finally, I successfully completed the website design myself and felt proud. When I showed it to my teacher for a consultation, she approved my design. This experience not only improved my design skills but also taught me the importance of patience, creativity, and a willingness to continue learning.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

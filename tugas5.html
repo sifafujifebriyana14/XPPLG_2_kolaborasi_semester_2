@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Care</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html{
+      scroll-behavior:smooth;
+    }
+
+    .active-nav{
+      color:#14b8a6;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fffd] text-gray-800 overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/70 border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center text-white text-xl">
+          🐾
+        </div>
+        <h1 class="text-2xl font-bold text-teal-600">
+          PetCare
+        </h1>
+      </div>
+
+      <ul class="hidden md:flex items-center gap-8 font-medium">
+        <li>
+          <a href="#home" class="nav-link active-nav hover:text-teal-500 transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#about" class="nav-link hover:text-teal-500 transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#services" class="nav-link hover:text-teal-500 transition">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="#gallery" class="nav-link hover:text-teal-500 transition">
+            Gallery
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact" class="nav-link hover:text-teal-500 transition">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <button class="bg-teal-500 hover:bg-teal-600 transition text-white px-5 py-2 rounded-full shadow-lg shadow-teal-200">
+        Get Started
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="min-h-screen flex items-center pt-32">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- TEXT -->
+      <div>
+
+        <span class="bg-teal-100 text-teal-600 px-4 py-2 rounded-full text-sm font-semibold">
+          Best Pet Care Service ✨
+        </span>
+
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mt-6">
+          Your Pet’s
+          <span class="text-teal-500">
+            Happiness
+          </span>
+          Matters
+        </h1>
+
+        <p class="text-gray-500 text-lg mt-6 leading-relaxed">
+          Kami memberikan layanan terbaik untuk hewan kesayanganmu.
+          Mulai dari grooming, pet hotel, hingga health care dengan
+          tempat nyaman dan aesthetic.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-8">
+
+          <button class="bg-teal-500 hover:scale-105 hover:bg-teal-600 transition duration-300 text-white px-8 py-4 rounded-full font-semibold shadow-xl shadow-teal-200">
+            Book Now
+          </button>
+
+          <button class="border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white transition duration-300 px-8 py-4 rounded-full font-semibold">
+            Learn More
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGE -->
+      <div class="relative flex justify-center">
+
+        <div class="absolute w-72 h-72 bg-teal-300 rounded-full blur-3xl opacity-40"></div>
+
+        <img
+          src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"
+          class="relative z-10 w-[400px] h-[500px] object-cover rounded-[40px] shadow-2xl hover:scale-105 transition duration-500"
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <div class="relative">
+
+        <img
+          src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-[35px] shadow-2xl"
+        />
+
+        <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl">
+          <h1 class="text-4xl font-black text-teal-500">
+            10+
+          </h1>
+          <p class="text-gray-500">
+            Years Experience
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+
+        <span class="text-teal-500 font-semibold uppercase tracking-widest">
+          About Us
+        </span>
+
+        <h1 class="text-5xl font-black mt-4 leading-tight">
+          We Care Your Lovely Pets
+        </h1>
+
+        <p class="text-gray-500 mt-6 leading-relaxed">
+          Tempat terbaik untuk menjaga hewan kesayanganmu dengan
+          pelayanan profesional, ruangan nyaman, dan staff yang ramah.
+        </p>
+
+        <div class="grid grid-cols-2 gap-5 mt-10">
+
+          <div class="bg-white p-6 rounded-3xl shadow-lg hover:-translate-y-2 transition">
+            <h1 class="text-4xl mb-3">
+              🐶
+            </h1>
+            <h2 class="font-bold text-xl">
+              Pet Grooming
+            </h2>
+          </div>
+
+          <div class="bg-white p-6 rounded-3xl shadow-lg hover:-translate-y-2 transition">
+            <h1 class="text-4xl mb-3">
+              🏥
+            </h1>
+            <h2 class="font-bold text-xl">
+              Health Care
+            </h2>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center">
+
+        <span class="text-teal-500 font-semibold uppercase tracking-widest">
+          Our Services
+        </span>
+
+        <h1 class="text-5xl font-black mt-4">
+          Best Services For Pets
+        </h1>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+
+        <!-- CARD -->
+        <div class="group bg-[#f8fffd] p-8 rounded-[35px] shadow-lg hover:bg-teal-500 transition duration-500">
+
+          <div class="w-20 h-20 rounded-3xl bg-teal-100 flex items-center justify-center text-4xl group-hover:bg-white transition">
+            ✂️
+          </div>
+
+          <h2 class="text-2xl font-bold mt-6 group-hover:text-white">
+            Grooming
+          </h2>
+
+          <p class="text-gray-500 mt-4 group-hover:text-white/80">
+            Membuat hewan peliharaanmu bersih dan tampil lucu.
+          </p>
+
+          <button class="mt-6 bg-teal-500 text-white px-6 py-3 rounded-full group-hover:bg-white group-hover:text-teal-500 transition">
+            Explore
+          </button>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="group bg-[#f8fffd] p-8 rounded-[35px] shadow-lg hover:bg-teal-500 transition duration-500">
+
+          <div class="w-20 h-20 rounded-3xl bg-teal-100 flex items-center justify-center text-4xl group-hover:bg-white transition">
+            🏨
+          </div>
+
+          <h2 class="text-2xl font-bold mt-6 group-hover:text-white">
+            Pet Hotel
+          </h2>
+
+          <p class="text-gray-500 mt-4 group-hover:text-white/80">
+            Tempat nyaman dan aman untuk penitipan hewan.
+          </p>
+
+          <button class="mt-6 bg-teal-500 text-white px-6 py-3 rounded-full group-hover:bg-white group-hover:text-teal-500 transition">
+            Explore
+          </button>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="group bg-[#f8fffd] p-8 rounded-[35px] shadow-lg hover:bg-teal-500 transition duration-500">
+
+          <div class="w-20 h-20 rounded-3xl bg-teal-100 flex items-center justify-center text-4xl group-hover:bg-white transition">
+            💉
+          </div>
+
+          <h2 class="text-2xl font-bold mt-6 group-hover:text-white">
+            Vet Care
+          </h2>
+
+          <p class="text-gray-500 mt-4 group-hover:text-white/80">
+            Pelayanan kesehatan hewan profesional dan terpercaya.
+          </p>
+
+          <button class="mt-6 bg-teal-500 text-white px-6 py-3 rounded-full group-hover:bg-white group-hover:text-teal-500 transition">
+            Explore
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center">
+
+        <span class="text-teal-500 font-semibold uppercase tracking-widest">
+          Gallery
+        </span>
+
+        <h1 class="text-5xl font-black mt-4">
+          Cute Pet Moments
+        </h1>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-16">
+
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-[30px] h-[350px] object-cover hover:scale-95 transition duration-500 shadow-xl">
+
+        <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-[30px] h-[350px] object-cover hover:scale-95 transition duration-500 shadow-xl">
+
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1200&auto=format&fit=crop"
+        class="rounded-[30px] h-[350px] object-cover hover:scale-95 transition duration-500 shadow-xl">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-28 bg-white">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="bg-teal-500 rounded-[40px] p-12 text-center text-white shadow-2xl">
+
+        <h1 class="text-5xl font-black leading-tight">
+          Ready To Care <br>
+          Your Lovely Pet?
+        </h1>
+
+        <p class="mt-6 text-white/80 text-lg">
+          Yuk berikan kenyamanan terbaik untuk hewan kesayanganmu.
+        </p>
+
+        <button class="mt-8 bg-white text-teal-500 hover:scale-105 transition duration-300 px-8 py-4 rounded-full font-bold">
+          Contact Us
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0f172a] text-white py-10">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <div>
+        <h1 class="text-3xl font-black text-teal-400">
+          🐾 PetCare
+        </h1>
+
+        <p class="text-gray-400 mt-3">
+          Best Pet Care Website Design.
+        </p>
+      </div>
+
+      <div class="flex gap-5 text-2xl">
+        <a href="#" class="hover:text-teal-400 transition">📷</a>
+        <a href="#" class="hover:text-teal-400 transition">🎵</a>
+        <a href="#" class="hover:text-teal-400 transition">💬</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPT ACTIVE NAVBAR -->
+  <script>
+
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+
+      link.addEventListener('click', function(){
+
+        navLinks.forEach(nav => nav.classList.remove('active-nav'));
+
+        this.classList.add('active-nav');
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
